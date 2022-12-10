@@ -1,0 +1,29 @@
+[project]
+name = "unit-test-hw"
+version = "2022.12.10"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipython",
+
+    "pytest",
+
+    "black",
+]
+
+
+[tool.isort]
+profile = "black"
+line_length = 119
+multi_line_output = 3
+known_standard_library = ["typing"]
+skip_glob = [
+    ".venv",
+]
+
+[tool.black]
+line-length = 119
+skip-string-normalization = true
